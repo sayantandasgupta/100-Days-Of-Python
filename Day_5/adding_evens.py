@@ -22,16 +22,20 @@ So the function first initialises a total as 0
 
 Then as we access all the even numbers using the for loop, we add them one by one to the total
 '''
+
+
 def find_even_number_sum():
 
     totalSum = 0
 
-    for evenNo in range(2,102,2):  # From the working of a range function, we know that 2 is starting value, 102 is ending value and the second 2 is the step value
+    # From the working of a range function, we know that 2 is starting value, 102 is ending value and the second 2 is the step value
+    for evenNo in range(2, 102, 2):
         # Quick Question: Why have we used 102 as ending value instead of 100? Think about it
 
         totalSum += evenNo
 
-    print(f"Total Sum of the even numbers between 1 and 100, including 100 is {totalSum}")
+    print(
+        f"Total Sum of the even numbers between 1 and 100, including 100 is {totalSum}")
 
 
 if __name__ == '__main__':
